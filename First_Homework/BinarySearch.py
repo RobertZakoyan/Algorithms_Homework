@@ -6,9 +6,9 @@ def BinarySearch_Normal(arr,  target):
         if arr[mid] == target:
             return mid,arr[mid]
         if arr[mid] > target:
-            higher = mid
+            higher = mid - 1 
         if arr[mid] < target:
-            lower = mid
+            lower = mid + 1
 print(BinarySearch_Normal([0,1,2,3,4,5,6,99,204], 99))
 
 def BinarySearch_Recursive(arr,target):
